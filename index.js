@@ -44,9 +44,11 @@ const log = (...args) => {
 log.enable = false;
 
 export default class Push extends eventemitter {
-  constructor ({logging = true}) {
+  constructor (opts = {}) {
     super();
-    log.enabled = logging;
+
+    const options = Object.assign(opts, {logging: true});
+    log.enabled = options.logging;
     this.activePads = [];
     this.batchCommands = []; // batch commands in case something is called before web midi is enabled
     this.midiEnabled = false;
