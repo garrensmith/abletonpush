@@ -1,5 +1,5 @@
 {
-  "name": "abletonpush",
+  "name": "@garrensmith/abletonpush",
   "version": "1.0.0",
   "description": "A library to work with the Ableton Push 2 in the browser",
   "main": "index.js",

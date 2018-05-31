@@ -13,7 +13,7 @@ The `abletonpush` module is distributed through npm and is compatible with `webp
 You can install it:
 
 ```
-npm install --save abletonpush
+npm install --save @garrensmith/abletonpush
 ```
 
 ## Table Of Contents
