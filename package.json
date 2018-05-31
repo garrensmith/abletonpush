@@ -1,0 +1,36 @@
+{
+  "name": "abletonpush",
+  "version": "1.0.0",
+  "description": "A library to work with the Ableton Push 2 in the browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./index.js music.js"
+  },
+  "keywords": [
+    "ableton",
+    "push",
+    "webaudio",
+    "webmidi",
+    "ableton",
+    "push",
+    "ableton",
+    "push",
+    "2"
+  ],
+  "author": "Garren Smith <garren.smith@gmail.com>",
+  "license": "apache-2.0",
+  "dependencies": {
+    "eventemitter2": "^5.0.1",
+    "lodash.clone": "^4.5.0",
+    "lodash.range": "^3.2.0",
+    "webmidi": "^2.0.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "jest": "^23.1.0"
+  }
+}
