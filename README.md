@@ -1,8 +1,11 @@
 # Ableton Push
 
 `abletonpush` is a library for working with the [Ableton Push](https://www.ableton.com/en/push/) in the browser.
-It is designed to work with the Ableton Push to play notes and chords in the Isomorphic pad layout. The pad is setup
-in C Major scale and each pad pressed will be relative to that.
+It is designed to allow a user to play notes and chords in the Isomorphic pad layout on the Push. The pad is setup
+in C Major scale and each pad pressed will be relative to that. The pads will be coloured to show the layout and 
+pads will change colour when pressed.
+
+<img src="https://garrensmith.com/push.svg" width="300">
 
 ## Installation
 
@@ -19,14 +22,14 @@ npm install --save abletonpush
 - [Usage](#usage)
   - [Configuration](#configuration)
   - [Events](#events)
-  - [SetColourButtons](#setColourButtons)
+  - [SetColourButtons](#setcolourbuttons)
 - [Logging](#logging)
 - [License](#license)
 
 ## Usage
 
 `abletonpush` is only designed to run in the browser. It uses the [webmidi](https://github.com/djipco/webmidi) library underneath. Currently only Google Chrome supports webmidi.
-With Google Chrome, web midi will work on a localhost port but for a production site will require https.
+With Google Chrome, web midi will work with http on a localhost port but for a production site it will require https.
 
 ```js
 import AbletonPush from 'abletonpush'
@@ -38,7 +41,7 @@ abletonpush.on('note:on', ({note, octave}) => {
 });
 ```
 
-Once the library can connect to an Ableton Push it will colour the pads on the Push so that can be used as an Isomorphic keyboard.
+Once the library has connected to an Ableton Push it will colour the pads on the Push so that can be used as an Isomorphic keyboard.
 
 ## Events
 
@@ -67,7 +70,7 @@ const push = new AbletonPush();
 push.setColourButtons(102, buttonColors.red);
 ```
 
-Take a look at [Ableton Push Midi interface](https://github.com/Ableton/push-interface/blob/master/doc/AbletonPush2MIDIDisplayInterface.asc#MIDI%20Mapping) for the correct button numbers;
+Take a look at [Ableton Push Midi interface](https://github.com/Ableton/push-interface/blob/master/doc/AbletonPush2MIDIDisplayInterface.asc#MIDI%20Mapping) for the correct button numbers
 
 ## Logging
 
@@ -75,6 +78,7 @@ Passing `logging: true` when creating the AbletonPush object will enable logging
 
 ```js
 const push - new AbletonPush({logging: true})
+```
 
 ## License
 
