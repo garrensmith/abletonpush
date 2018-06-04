@@ -1,6 +1,6 @@
 # Ableton Push
 
-`abletonpush` is a library for working with the [Ableton Push](https://www.ableton.com/en/push/) in the browser.
+`abletonpush` is a library for working with the [Ableton Push](https://www.ableton.com/en/push/) in the browser. A working example can be found [here](https://www.garrensmith.com/posts/pushsynth).
 It is designed to allow a user to play notes and chords in the Isomorphic pad layout on the Push. The pad is setup
 in C Major scale and each pad pressed will be relative to that. The pads will be coloured to show the layout and 
 pads will change colour when pressed.
