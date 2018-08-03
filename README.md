@@ -77,7 +77,7 @@ Take a look at [Ableton Push Midi interface](https://github.com/Ableton/push-int
 Passing `logging: true` when creating the AbletonPush object will enable logging.
 
 ```js
-const push - new AbletonPush({logging: true})
+const push = new AbletonPush({logging: true})
 ```
 
 ## License
