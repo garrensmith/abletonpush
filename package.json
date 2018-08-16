@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "A library to work with the Ableton Push 2 in the browser",
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "babel src -d dist",
+    "clean": "rimraf dist",
+    "dist": "yarn run clean && yarn run build",
     "test": "jest",
     "lint": "eslint ./index.js music.js"
   },
@@ -27,10 +33,12 @@
     "webmidi": "^2.0.5"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.0.1",
     "babel-preset-env": "^1.7.0",
     "eslint": "^4.19.1",
-    "jest": "^23.1.0"
+    "jest": "^23.1.0",
+    "rimraf": "^2.6.2"
   }
 }
