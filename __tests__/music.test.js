@@ -1,7 +1,4 @@
-import {
-  sortNotesToScale, 
-  determineChord
-} from '../music';
+import { determineChord, sortNotesToScale } from '../src/music';
 
 describe('Music', () => {
 
