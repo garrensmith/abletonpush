@@ -13,7 +13,7 @@
     "clean": "rimraf dist",
     "dist": "npm run clean && npm run build",
     "test": "jest",
-    "lint": "eslint ./index.js music.js",
+    "lint": "eslint ./src ./__test__",
     "prepublish": "npm run dist"
   },
   "keywords": [

@@ -59,7 +59,7 @@ export default class Push extends eventemitter {
         log('WebMidi could not be enabled.');
         return;
       }
-      
+
       this.midiEnabled = true;
       log('WebMidi enabled!');
 
@@ -227,7 +227,7 @@ export default class Push extends eventemitter {
     });
   }
 
-  
+
   setColourButtons (button, color) {
     if (!this.pushConnected) {
       this.batchCommands.push([176, [button, color], 0]);

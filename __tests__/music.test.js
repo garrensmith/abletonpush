@@ -28,7 +28,7 @@ describe('Music', () => {
       }];
 
       notes.sort(sortNotesToScale);
-      expect(notes).toEqual(sortedNotes)
+      expect(notes).toEqual(sortedNotes);
     });
 
     it('sorts notes correctly in different octave', () => {
@@ -55,7 +55,7 @@ describe('Music', () => {
       }];
 
       notes.sort(sortNotesToScale);
-      expect(notes).toEqual(sortedNotes)
+      expect(notes).toEqual(sortedNotes);
     });
   });
 
@@ -64,7 +64,7 @@ describe('Music', () => {
     it('determines I chord', () => {
       const notes = [{
         note: 'C',
-        octave: '4' 
+        octave: '4'
       }, {
         note: 'E',
         octave: '4'
@@ -84,7 +84,7 @@ describe('Music', () => {
     it('determines vi chord', () => {
       const notes = [{
         note: 'A',
-        octave: '3' 
+        octave: '3'
       }, {
         note: 'C',
         octave: '4'
@@ -104,7 +104,7 @@ describe('Music', () => {
     it('returns null for no 5th note', () => {
       const notes = [{
         note: 'A',
-        octave: '3' 
+        octave: '3'
       }, {
         note: 'C',
         octave: '4'
@@ -116,7 +116,7 @@ describe('Music', () => {
     it('returns null for no 5th note', () => {
       const notes = [{
         note: 'C',
-        octave: '3' 
+        octave: '3'
       }, {
         note: 'C#',
         octave: '4'
@@ -131,7 +131,7 @@ describe('Music', () => {
     it('returns null for no 5th note', () => {
       const notes = [{
         note: 'A',
-        octave: '3' 
+        octave: '3'
       }, {
         note: 'C',
         octave: '4'
@@ -146,7 +146,7 @@ describe('Music', () => {
     it('returns null for extra note', () => {
       const notes = [{
         note: 'A',
-        octave: '3' 
+        octave: '3'
       }, {
         note: 'C',
         octave: '4'
